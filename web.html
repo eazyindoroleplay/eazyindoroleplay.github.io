@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Group Chat</title>
+<link rel="stylesheet" href="styles.css"> <!-- Hubungkan dengan file CSS -->
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="chat-sidebar">
+        <h2>Grup Chat</h2>
+        <ul id="groupList">
+            <!-- Daftar grup akan ditampilkan di sini -->
+            <li onclick="selectGroup('group1')">Grup 1</li>
+            <li onclick="selectGroup('group2')">Grup 2</li>
+            <!-- Tambahkan grup lainnya sesuai kebutuhan -->
+        </ul>
+        <div class="username-change">
+            <input type="text" id="usernameInput" placeholder="Ganti Username">
+            <button onclick="changeUsername()">Ganti</button>
+        </div>
+    </div>
+
+    <div class="chat-main">
+        <div class="chat-header">
+            <h3 id="groupName">Pilih Grup</h3>
+            <span id="username">Username</span> <!-- Menampilkan username -->
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <!-- Pesan-pesan chat akan ditampilkan di sini -->
+        </div>
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Ketik pesan...">
+            <button onclick="sendMessage()">Kirim</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script> <!-- Hubungkan dengan file JavaScript -->
+</body>
+</html>
